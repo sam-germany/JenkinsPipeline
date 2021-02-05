@@ -2,8 +2,25 @@ pipeline {
   agent any
   stages {
     stage('Build') {
+      parallel {
+        stage('Build') {
+          steps {
+            echo 'print build message'
+          }
+        }
+
+        stage('Test') {
+          steps {
+            echo 'print Test step'
+          }
+        }
+
+      }
+    }
+
+    stage('Deploy') {
       steps {
-        echo 'print build message'
+        echo 'Deploying the app --------'
       }
     }
 
