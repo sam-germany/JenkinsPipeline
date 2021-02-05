@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'Testing the application'
-            echo 'with the arguments $jfdk'
+            echo 'with the arguments $jfd-------k'
           }
         }
 
