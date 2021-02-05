@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'print Test step'
-            echo "Get the Key22 $(Key22)"
+            echo 'Get the Key22 $(Key22)'
           }
         }
 
