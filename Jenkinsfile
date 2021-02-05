@@ -44,7 +44,7 @@ pipeline {
         stage('Artifacts') {
           steps {
             archiveArtifacts 'LogTestFile22.txt'
-          }
+         }
         }
 
       }
@@ -55,3 +55,4 @@ pipeline {
     Key22 = 'abc_value'
   }
 }
+
