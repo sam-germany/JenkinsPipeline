@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'print Test step'
-            echo '"Get the Key22 $(key22)"'
+            echo '"Get the Key22 $(Key22)"'
           }
         }
 
@@ -21,7 +21,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        echo 'Deploying the app --------'
+        echo 'Deploying the app -------4444-'
       }
     }
 
