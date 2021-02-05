@@ -12,6 +12,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'print Test step'
+            echo '"Get the Key22 $(key22)"'
           }
         }
 
@@ -24,5 +25,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    Key22 = 'abc_value'
   }
 }
