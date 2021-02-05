@@ -18,7 +18,7 @@ pipeline {
 
         stage('Test Log') {
           environment {
-            LocalVariable22 = "Hello Local22"
+            LocalVariable22 = 'Hello Local22'
           }
           steps {
             writeFile(file: 'LogTestFile22.txt', text: "This is an automation file  ${Key22} and localVariable ${LocalVariable22}")
@@ -32,7 +32,7 @@ pipeline {
       parallel {
         stage('Deploy') {
           steps {
-            input(message: 'Do you want to deploy ---', id: 'OK')
+            input(message: 'Do you want to deploy -???--', id: 'OK')
             echo 'Deploying the app -------4444-'
           }
         }
